@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- CSS -->
+  </head>
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">Bootstrap</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#nav-items"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="nav-items">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-items active">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-items">
+                <a href="pages/login.html" class="nav-link">Login</a>
+              </li>
+
+              <!-- Dropdown -->
+              <li class="nav-items dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Follow us</a
+                >
+                <div class="dropdown-menu">
+                  <a
+                    href="https://www.facebook.com/login/"
+                    class="dropdown-item"
+                    ><i class="fa-brands fa-facebook-f mr-2 text-primary"></i
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://twitter.com/i/flow/login"
+                    class="dropdown-item"
+                    ><i class="fa-brands fa-twitter mr-2 text-primary"></i
+                    >Twitter</a
+                  >
+                  <a href="https://www.youtube.com/" class="dropdown-item"
+                    ><i class="fa-brands fa-youtube mr-2 text-danger"></i
+                    >Youtube</a
+                  >
+                  <a
+                    href="https://www.instagram.com/accounts/login/"
+                    class="dropdown-item"
+                    ><i
+                      class="fa-brands fa-instagram mr-2"
+                      style="color: rgb(255, 38, 219)"
+                    >
+                    </i>
+                    Instagram
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <div class="jumbotron">
+      <div class="container">
+        <!-- Alert -->
+
+        <div class="alert alert-success alert-dismissabled fade show">
+          <button type="button" class="close" data-dismiss="alert">
+            &times;
+          </button>
+          <h3 class="alert-heading">This page only for education purpose.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            quod dignissimos, perspiciatis temporibus placeat ipsa id officiis
+            eveniet consequatur necessitatibus quisquam earum eaque similique
+            veniam ullam molestiae a, vel nobis?
+          </p>
+          <hr />
+          <p>
+            for more infomation <a href="#" class="alert-link">click here</a>.
+          </p>
+        </div>
+
+        <!-- Alert -->
+        <!-- Heading -->
+        <div>
+          <h1 class="display-4">Hello Everyone!</h1>
+          <br />
+          <p class="lead">
+            These three tools dominate web development. Every library or tool
+            seems to be centered around HTML, CSS, and JS. So if you want to
+            become a web developer, you need to learn them well.
+          </p>
+          <p class="lead">
+            You'll also discover that websites are mostly built from these three
+            languages.
+          </p>
+          <p class="lead">
+            These three tools dominate web development. Every library or tool
+            seems to be centered around
+            <span class="badge badge-danger">HTML</span>
+            <span class="badge badge-primary">CSS</span>
+            <span class="badge badge-warning">JavaSript</span>. So if you want
+            to become a web developer, you need to learn them well.
+          </p>
+        </div>
+        <hr class="mt-5 bg-secondary" />
+
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="popover"
+          data-title="Learn IWD"
+          data-content="if you intersted in IWD.Subscribe our Channal"
+        >
+          Learn More!
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-warning dropdown-toggle ml-3"
+          data-toggle="dropdown"
+        >
+          Course
+        </button>
+        <div class="dropdown-menu">
+          <div class="dropdown-header">Programing languages</div>
+          <a href="#" class="dropdown-item"
+            ><i class="fa-solid fa-c mr-2 text-primary"></i>C</a
+          >
+          <a href="#" class="dropdown-item"
+            ><i class="fa-brands fa-java mr-2 text-danger"></i>Java</a
+          >
+          <a href="#" class="dropdown-item"
+            ><i class="fa-brands fa-python mr-2 text-warning"></i>Python</a
+          >
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">Web Designing</div>
+          <a href="#" class="dropdown-item"
+            ><i class="fa-brands fa-html5 mr-2 text-danger"></i>HTML</a
+          >
+          <a href="#" class="dropdown-item"
+            ><i class="fa-brands fa-css3 mr-2 text-primary"></i>CSS</a
+          >
+          <a href="#" class="dropdown-item"
+            ><i class="fa-brands fa-js mr-2 text-warning"></i>Java Script</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>

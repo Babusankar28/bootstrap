@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <!-- CSS -->
+  </head>
+  <body>
+    <!-- Header Start -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">Bootstrap</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#nav-items"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="nav-items">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-items">
+                <a href="../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-items active">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-items dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Follow us</a
+                >
+                <div class="dropdown-menu">
+                  <a
+                    href="https://www.facebook.com/login/"
+                    class="dropdown-item"
+                    ><i class="fa-brands fa-facebook-f mr-2 text-primary"></i
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://twitter.com/i/flow/login"
+                    class="dropdown-item"
+                    ><i class="fa-brands fa-twitter mr-2 text-primary"></i
+                    >Twitter</a
+                  >
+                  <a href="https://www.youtube.com/" class="dropdown-item"
+                    ><i class="fa-brands fa-youtube mr-2 text-danger"></i
+                    >Youtube</a
+                  >
+                  <a
+                    href="https://www.instagram.com/accounts/login/"
+                    class="dropdown-item"
+                    ><i
+                      class="fa-brands fa-instagram mr-2"
+                      style="color: rgb(255, 38, 219)"
+                    >
+                    </i>
+                    Instagram
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main -->
+    <div class="jumbotron py-4">
+      <div class="container">
+        <div class="breadcrumb">
+          <div class="breadcrumb-item">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="breadcrumb-item">
+            <a href="login.html">login</a>
+          </div>
+          <div class="breadcrumb-item">Sign In</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <div class="row">
+        <div class="card col-12 p-0">
+          <div class="card-header bg-primary text-white">
+            <h1 class="p-2">
+              <i class="fa-solid fa-user mr-3"></i>Create Account :
+            </h1>
+          </div>
+          <div class="card-body py-3">
+            <form name="create">
+              <div class="form-group">
+                <label for="fullname">Fullname : </label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Enter Your Fullname"
+                  class="form-control"
+                />
+                <div class="invalid-feedback">
+                  Your Name is Too Short .Please Enter Fullname
+                </div>
+              </div>
+              <div class="ml-3 form-group">
+                <div class="row">
+                  <label for="gender" class="mr-4 form-check-lable"
+                    >Gender :
+                  </label>
+                  <div class="mx-4">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      class="form-check-input"
+                      value="male"
+                      checked
+                    />
+                    <label for="male" class="form-check-lable"> Male</label>
+                  </div>
+                  <div class="mx-4">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      class="form-check-input"
+                      value="female"
+                    />
+                    <label for="female" class="form-check-lable"> Female</label>
+                  </div>
+                  <div class="mx-4">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="others"
+                      class="form-check-input"
+                      value="others"
+                    />
+                    <label for="others" class="form-check-lable"> Others</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="123@example.com"
+                      class="form-control"
+                    />
+                    <div class="invalid-feedback">
+                      Please Enter Valid Email Address.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="mobile">Mobile No:</label>
+                    <input
+                      type="number"
+                      name="mobile"
+                      id="mobile"
+                      placeholder="9876543210"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="password">Password : </label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Enter Your Password"
+                      class="form-control"
+                    />
+                    <div class="invalid-feedback">
+                      Please Enter Valid Password.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="confirm_password">Confirm Password :</label>
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      id="confirm_password"
+                      placeholder="Confirm Password"
+                      class="form-control"
+                    />
+                    <div class="invalid-feedback">
+                      Confirm Password and Password Not Match.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <label for="agree" class="form-check-lable">
+                  <input
+                    type="checkbox"
+                    value="agree"
+                    id="agree"
+                    required
+                    class="form-check-input"
+                  />
+                  Agree the
+                  <a href="#terms" data-target="#terms" data-toggle="modal">
+                    terms and Condition </a
+                  >.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">
+                Create Account
+              </button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <p class="card-text text-center text-muted">
+              you have an account already ? <a href="login.html">Login</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form -->
+
+    <!-- Main End -->
+    <!-- Modal -->
+    <div class="modal" id="terms" data-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Terms and Conditions</h2>
+            <button class="close" type="button" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus at sint molestiae repudiandae, amet saepe nisi odio
+              eveniet dolore sit nulla dolorum debitis unde iste eum, vero quam
+              esse reiciendis perspiciatis, architecto cupiditate nobis! Ut
+              doloremque beatae inventore nostrum voluptatibus, in commodi
+              eveniet praesentium porro illum? Excepturi deleniti quae velit
+              voluptates obcaecati debitis quasi quidem! Debitis totam ducimus
+              reiciendis aspernatur. Alias, est cum voluptatem ducimus saepe
+              maiores repudiandae aut qui fugiat cupiditate sit ipsam suscipit
+              vero iusto quis provident ad ullam architecto cumque esse
+              sapiente? Tenetur sed expedita neque omnis debitis! Ad, minus cum?
+              Eveniet, asperiores? Sequi fuga accusantium maxime!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              Agree
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Disagree
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../asset/js/signup.js"></script>
+  </body>
+</html>
